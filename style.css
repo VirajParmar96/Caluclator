@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+
+:root {
+  --primary-color: #ffefc5; /* Light yellow */
+  --secondary-color: #2e3b4e; /* Deep navy blue */
+}
+.dark-theme {
+  --primary-color: #1b1b2f; /* Dark navy */
+  --secondary-color: #0f1026; /* Almost black */
+}
+
+body {
+  height: 100%;
+  font-family: "Belanosima", sans-serif;
+  background: linear-gradient(135deg, #fddb92, #d1fdff); /* Light orange to sky blue */
+}
+
+#icon {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.historyHeadline {
+  text-align: center;
+}
+
+.clearHistory {
+  cursor: pointer;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+  background: #fff09e; /* Gold for button background */
+  font-size: 20px;
+  color: #2e3b4e; /* Deep navy blue text */
+  cursor: pointer;
+}
+
+.button.arithmetic {
+  background: #c28800f1; /* Light teal for arithmetic buttons */
+  font-size: 17px;
+  color:#d1fdff
+}
+
+@media screen and (max-width: 768px) {
+  .cal-outer-body {
+    width: 350px;
+  }
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+}
+
+.button:active {
+  background-color: #f06543; /* Coral red on button press */
+  color: #baffc9; /* Soft green text */
+}
+
+.button:hover {
+  background-color: #2b2b2b; /* Charcoal on hover */
+  opacity: 0.7;
+}
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  width: 225px;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 38px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffe3d8; /* Light peach for input fields */
+  color: #2e3b4e; /* Deep navy blue text */
+}
+
+.cal-outer-body {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: #2e3b4e; /* Deep navy blue for calculator body */
+  border-radius: 10px;
+  color: #ffd700; /* Gold text */
+}
+
+.cal-inner-body {
+  padding: 10px;
+  background-color: #1b263b; /* Darker navy for inner body */
+  border-radius: 10px;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
